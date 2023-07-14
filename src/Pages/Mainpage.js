@@ -16,7 +16,7 @@ import Particle from '../Partials/Particles.jsx';
 
 function Mainpage() {
   return (
-    <Container sx={{width:'100vw', height:'100vh', my:'4rem', overflow:'auto'}}>
+    <Container sx={{width:'100vw', height:'100vh', overflow:'auto'}}>
        <Particle />
         <Box sx={{height:'100%',
                   display:'flex',
@@ -24,7 +24,7 @@ function Mainpage() {
                   textAlign:'center', 
                   justifyContent:'center', 
                   alignItems:'center'}}>
-          <Card sx={{width:'90%', height:'auto', boxShadow:3, mt:2, fontSize:"6rem"}}>
+          <Card id="mainpagetext" sx={{width:'90%', height:'auto', boxShadow:3, fontSize:"4.5rem", backgroundColor:"transparent"}}>
                   <Typewriter
         
                       onInit={(typewriter) => {

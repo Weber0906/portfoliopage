@@ -17,7 +17,7 @@ export default function Projects() {
                   alignItems:'center',}}>
         
       <Carousel >
-      <Card sx={{width:'90%', height:'auto', boxShadow:3, mt:2}}>
+      <Card sx={{width:'100%', height:'auto', boxShadow:3, mt:2}}>
           <Typography>Description: AI.nalyze - stock market analysis with Open AI API. Node.js + React.js.</Typography> 
           <a href='https://ainalyze.onrender.com/'>
               <Button variant="contained" color="primary" sx={{ mb: '1rem'}}>
@@ -27,7 +27,7 @@ export default function Projects() {
         
             <img src='./project1.jpg' alt='project 1'/> 
       </Card>
-      <Card sx={{width:'90%', height:'auto', boxShadow:3, mt:2}}>
+      <Card sx={{width:'100%', height:'auto', boxShadow:3, mt:2}}>
         <Typography>And cut - stock video bank. Real world project. Coming soon</Typography>
         {/* <a href=''> */}
               <Button variant="contained" color="primary" sx={{ mb: '1rem'}}>
@@ -36,7 +36,7 @@ export default function Projects() {
                 {/* </a> */}
         <img src='./arrivesoon.png' alt='project 2'/> 
       </Card>
-      <Card sx={{width:'90%', height:'auto', boxShadow:3, mt:2}}>
+      <Card sx={{width:'100%', height:'auto', boxShadow:3, mt:2}}>
         <Typography>Coming Soon</Typography>
         {/* <a href=''> */}
               <Button variant="contained" color="primary" sx={{ mb: '1rem'}}>

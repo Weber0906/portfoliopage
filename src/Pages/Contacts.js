@@ -16,7 +16,7 @@ export default function Contacts() {
                   textAlign:'center', 
                   justifyContent:'center', 
                   alignItems:'center'}}>
-        <Card sx={{width:'90%', height:'auto', boxShadow:3, fontSize:"5rem"}}>
+        <Card sx={{width:'90%', height:'auto', boxShadow:3, fontSize:"4.5rem", backgroundColor:"transparent"}}>
           <Typewriter
         
         onInit={(typewriter) => {
