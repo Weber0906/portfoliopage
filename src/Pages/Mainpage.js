@@ -24,7 +24,7 @@ function TypewriterText({ text, delay, onComplete }) {
   return <Typography variant="h2" align="center">{displayText}</Typography>;
 }
 
-export default function Mainpage() {
+function Mainpage() {
   const [showSecondText, setShowSecondText] = useState(false);
   const [showDownloadButton, setShowDownloadButton] = useState(false);
   const [typingCompleteCount, setTypingCompleteCount] = useState(0);
@@ -43,22 +43,22 @@ export default function Mainpage() {
     setTypingCompleteCount((prevCount) => prevCount + 1);
   };
 
-  useEffect(() => {
-    if (typingCompleteCount === 2) {
-      setShowDownloadButton(true);
-    }
-  }, [typingCompleteCount]);
+  // useEffect(() => {
+  //   if (typingCompleteCount === 2) {
+  //     setShowDownloadButton(true);
+  //   }
+  // }, [typingCompleteCount]);
 
-  const handleDownloadClick = () => {
-    const downloadUrl = '../Nikolas_Weber_CV.pdf'; // Path to the document in the public folder
-    const link = document.createElement('a');
-    link.href = downloadUrl;
-    link.download = 'Nikolas_Weber_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    console.log('CV Downloaded');
-  };
+  // const handleDownloadClick = () => {
+  //   const downloadUrl = '../Nikolas_Weber_CV.pdf'; // Path to the document in the public folder
+  //   const link = document.createElement('a');
+  //   link.href = downloadUrl;
+  //   link.download = 'Nikolas_Weber_CV.pdf';
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  //   console.log('CV Downloaded');
+  // };
 
 
   return (
@@ -75,13 +75,15 @@ export default function Mainpage() {
             {showSecondText && (
             <TypewriterText text="full-stack developer" delay={100} onComplete={handleTypingComplete} />
             )}
-            {showDownloadButton && (
+            {/* {showDownloadButton && (
             <Button variant="contained" color="primary" onClick={handleDownloadClick} sx={{mt:2, mb:2}}>
               Download a CV
             </Button>
-          )}
+          )} */}
           </Card>
         </Box>
     </Container>  
   );
 }
+
+export default Mainpage
