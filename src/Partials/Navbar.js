@@ -5,7 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { LinkedIn, GitHub } from '@mui/icons-material';
 
 export default function Navbar() {
-    const [isDrawerOpen, setDrawerOpen] = React.useState(false);
+    const [isDrawerOpen, setDrawerOpen] = useState(false);
 
     const handleDrawerToggle = () => {
       setDrawerOpen(!isDrawerOpen);
@@ -13,8 +13,6 @@ export default function Navbar() {
   
     return (
       <AppBar position="fixed" sx={{ justifyContent: 'flex start'}}>
-        
-        
         <Toolbar sx={{ justifyContent: 'flex-end' }}>
         <div>
         <a href="https://www.linkedin.com/in/nikolas-weber-tlv/" target="_blank" rel="noopener noreferrer">
@@ -27,7 +25,7 @@ export default function Navbar() {
           <Typography sx={{ display: { xs:'none', sm: 'none', md: 'block' } }}variant="h6" component="div">
             <Button color="inherit" component={Link} to="/">HOME</Button>
             <Button color="inherit" component={Link} to="/projects">PROJECTS</Button>
-            {/* <Button color="inherit" component={Link} to="/skills">SKILLS</Button> */}
+            <Button color="inherit" component={Link} to="/skills">SKILLS</Button>
             <Button color="inherit" component={Link} to="/contacts">CONTACTS</Button>
           </Typography>
           <IconButton

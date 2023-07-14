@@ -1,13 +1,11 @@
 import React from "react";
 import { Box, Card, CardContent, Container, Typography } from "@mui/material";
-import { PythonOriginal, JavascriptOriginal, Html5Original, Css3Original, DjangoPlain, ReactOriginal, NodejsOriginal, PostgresqlOriginal, ReduxOriginal, ExpressOriginal } from "devicons-react"
-
+import Particle from '../Partials/Particles.jsx';
 
 export default function Skills() {
     return (
-      <Container sx={{width:'50vw', 
-                      height:'50vh', 
-                      my:'4rem'}}>
+      <Container sx={{width:'100vw', height:'100vh', my:'4rem', overflow:'auto'}}>
+      <Particle />
       <Box sx={{ fontSize:'h2.fontSize', textAlign:'center'}}> My skills</Box>
       <br/>
       <Box sx={{  display:'flex', 
@@ -15,73 +13,73 @@ export default function Skills() {
                   textAlign:'center', 
                   justifyContent:'center', 
                   alignItems:'center'}}>
-                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 180, height: 180, m:'2rem', boxShadow:'3' }}>
                       <CardContent  >
-                        <PythonOriginal size={50}/>
                         <Typography  variant="subtitle1" >Python</Typography>
+                        <img src="./python-original.svg" alt="python"/>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 180, height: 180, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <JavascriptOriginal size={50} />
                         <Typography  variant="subtitle1" >JS</Typography>
+                        <img src="./javascript-original.svg" alt="js"/>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 180, height: 180, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <Html5Original size={50}/>
                         <Typography  variant="subtitle1" >HTML 5</Typography>
+                        <img src="./html5-original.svg" alt="html"/>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 180, height: 180, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <Css3Original size={50}/>
                         <Typography  variant="subtitle1" >CSS 3</Typography>
+                        <img src="./css3-original.svg" alt="css"/>
                       </CardContent>
                     </Card>
                
-                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 180, height: 180, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <DjangoPlain size={50}/>
                         <Typography  variant="subtitle1" >Django</Typography>
+                        <img src="./django-plain.svg" alt="django"/>
                       </CardContent>
                     </Card>
                
-                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 180, height: 180, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <ReactOriginal size={50}/>
                         <Typography  variant="subtitle1" >React.js</Typography>
+                        <img src="./react-original.svg" alt="react"/>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 180, height: 180, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <NodejsOriginal size={50}/>
                         <Typography  variant="subtitle1" >Node.js</Typography>
+                        <img src="./nodejs-original.svg" alt="node"/>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 180, height: 180, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <PostgresqlOriginal size={50}/>
                         <Typography  variant="subtitle1" >Postgresql</Typography>
+                        <img src="./postgresql-original.svg" alt="postgrsql"/>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 180, height: 180, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <ReduxOriginal size={50}/>
                         <Typography  variant="subtitle1" >Redux</Typography>
+                        <img src="./redux-original.svg" alt="redux"/>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 180, height: 180, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <ExpressOriginal size={50}/>
                         <Typography  variant="subtitle1" >Express.js</Typography>
+                        <img src="./express-original.svg" alt="express"/>
                       </CardContent>
                     </Card>  
         </Box>

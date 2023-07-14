@@ -2,12 +2,13 @@ import React from 'react';
 import { Box, Button, Card, Typography, Container } from '@mui/material';
 import { WhatsApp, Telegram, Phone, Email } from '@mui/icons-material';
 import Typewriter from 'typewriter-effect';
+import Particle from '../Partials/Particles';
 
 export default function Contacts() {
   
   return (
-    <Container sx={{width:'100vw', 
-                      height:'100vh'}}>
+    <Container sx={{width:'100vw', height:'100vh', my:'4rem', overflow:'auto'}}>
+      <Particle />
       <br/>
       <Box sx={{height:'100%',
                   display:'flex',

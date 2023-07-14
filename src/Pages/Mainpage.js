@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Typography, Box, Button, Container, Card } from '@mui/material';
+import React from 'react';
+import { Box, Button, Container, Card } from '@mui/material';
 import Typewriter from 'typewriter-effect';
-
+import Particle from '../Partials/Particles.jsx';
 
   const handleDownloadClick = () => {
     const downloadUrl = '../Nikolas_Weber_CV.pdf'; // Path to the document in the public folder
@@ -17,7 +17,7 @@ import Typewriter from 'typewriter-effect';
 function Mainpage() {
   return (
     <Container sx={{width:'100vw', height:'100vh', my:'4rem', overflow:'auto'}}>
-      
+       <Particle />
         <Box sx={{height:'100%',
                   display:'flex',
                   flexWrap:'wrap', 

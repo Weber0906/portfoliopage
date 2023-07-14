@@ -2,10 +2,12 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { Box, Typography, Button, Container, Card } from '@mui/material';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Particle from '../Partials/Particles.jsx';
 
 export default function Projects() {
   return (
     <Container sx={{width:'100vw', height:'100vh', mt:'4rem', overflow:'auto'}}>
+       <Particle />
     <Box sx={{height:'100%',
                   width:'100%',
                   display:'flex', 
