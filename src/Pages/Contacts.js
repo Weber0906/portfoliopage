@@ -1,48 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Button, Card, Typography, Container } from '@mui/material';
 import { WhatsApp, Telegram, Phone, Email } from '@mui/icons-material';
-
-
-function TypewriterText({ text, delay, onComplete }) {
-  const [displayText, setDisplayText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      if (currentIndex < text.length) {
-        setDisplayText((prevText) => prevText + text[currentIndex]);
-        setCurrentIndex((prevIndex) => prevIndex + 1);
-      } else {
-        clearInterval(intervalId);
-        
-      }
-    }, delay);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, [text, currentIndex, delay, onComplete]);
-
-  return <Typography variant="h2" align="center">{displayText}</Typography>;
-}
+import Typewriter from 'typewriter-effect';
 
 export default function Contacts() {
   
   return (
     <Container sx={{width:'100vw', 
-                      height:'100vh', 
-                      my:'4rem'}}>
+                      height:'100vh'}}>
       <br/>
-          <Box>
-            <TypewriterText text="Thank you for viewing my portfolio page - don't hesitate to contact and hire me!" delay={100}/>
-          </Box>
-          <Box sx={{width:'100%', 
-                  height:'80%',
-                  display:'flex', 
+      <Box sx={{height:'100%',
+                  display:'flex',
                   flexWrap:'wrap', 
                   textAlign:'center', 
                   justifyContent:'center', 
-                  alignItems:'center'}} >
+                  alignItems:'center'}}>
+        <Card sx={{width:'90%', height:'auto', boxShadow:3, fontSize:"5rem"}}>
+          <Typewriter
+        
+        onInit={(typewriter) => {
+            typewriter
+                .typeString("Thank you for visiting my page. Don't hesitate to hire me)")
+                .pauseFor(1000)
+                .start();
+        }}
+        />
+          </Card>
+     
             <Card sx={{m:'1rem', width:170, height:170, boxShadow:'3'}}>
                 <Typography  variant="subtitle1" >Call me</Typography>
                 <br/>
