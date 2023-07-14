@@ -5,8 +5,8 @@ import { PythonOriginal, JavascriptOriginal, Html5Original, Css3Original, Django
 
 export default function Skills() {
     return (
-      <Container sx={{width:'100vw', 
-                      height:'100vh', 
+      <Container sx={{width:'50vw', 
+                      height:'50vh', 
                       my:'4rem'}}>
       <Box sx={{ fontSize:'h2.fontSize', textAlign:'center'}}> My skills</Box>
       <br/>
@@ -15,72 +15,72 @@ export default function Skills() {
                   textAlign:'center', 
                   justifyContent:'center', 
                   alignItems:'center'}}>
-                   <Card sx={{ width: 170, height: 170, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
                       <CardContent  >
-                        <PythonOriginal size={100}/>
+                        <PythonOriginal size={50}/>
                         <Typography  variant="subtitle1" >Python</Typography>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 170, height: 170, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <JavascriptOriginal size={100} />
+                        <JavascriptOriginal size={50} />
                         <Typography  variant="subtitle1" >JS</Typography>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 170, height: 170, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <Html5Original size={100}/>
+                        <Html5Original size={50}/>
                         <Typography  variant="subtitle1" >HTML 5</Typography>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 170, height: 170, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <Css3Original size={100}/>
+                        <Css3Original size={50}/>
                         <Typography  variant="subtitle1" >CSS 3</Typography>
                       </CardContent>
                     </Card>
                
-                   <Card sx={{ width: 170, height: 170, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <DjangoPlain size={100}/>
+                        <DjangoPlain size={50}/>
                         <Typography  variant="subtitle1" >Django</Typography>
                       </CardContent>
                     </Card>
                
-                   <Card sx={{ width: 170, height: 170, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <ReactOriginal size={100}/>
+                        <ReactOriginal size={50}/>
                         <Typography  variant="subtitle1" >React.js</Typography>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 170, height: 170, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <NodejsOriginal size={100}/>
+                        <NodejsOriginal size={50}/>
                         <Typography  variant="subtitle1" >Node.js</Typography>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 170, height: 170, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <PostgresqlOriginal size={100}/>
+                        <PostgresqlOriginal size={50}/>
                         <Typography  variant="subtitle1" >Postgresql</Typography>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 170, height: 170, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <ReduxOriginal size={100}/>
+                        <ReduxOriginal size={50}/>
                         <Typography  variant="subtitle1" >Redux</Typography>
                       </CardContent>
                     </Card>
                 
-                   <Card sx={{ width: 170, height: 170, m:'2rem', boxShadow:'3' }}>
+                   <Card sx={{ width: 100, height: 100, m:'2rem', boxShadow:'3' }}>
                       <CardContent >
-                        <ExpressOriginal size={100}/>
+                        <ExpressOriginal size={50}/>
                         <Typography  variant="subtitle1" >Express.js</Typography>
                       </CardContent>
                     </Card>  

@@ -27,7 +27,7 @@ export default function Navbar() {
           <Typography sx={{ display: { xs:'none', sm: 'none', md: 'block' } }}variant="h6" component="div">
             <Button color="inherit" component={Link} to="/">HOME</Button>
             <Button color="inherit" component={Link} to="/projects">PROJECTS</Button>
-            <Button color="inherit" component={Link} to="/skills">SKILLS</Button>
+            {/* <Button color="inherit" component={Link} to="/skills">SKILLS</Button> */}
             <Button color="inherit" component={Link} to="/contacts">CONTACTS</Button>
           </Typography>
           <IconButton

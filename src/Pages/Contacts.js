@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Box, Button, Card, Typography, Container } from '@mui/material';
 import { WhatsApp, Telegram, Phone, Email } from '@mui/icons-material';
 import Typewriter from 'typewriter-effect';
