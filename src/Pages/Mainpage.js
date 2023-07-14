@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Typography, Box, Button, Container, Card } from '@mui/material';
 
-
-
-
-
-
 function TypewriterText({ text, delay, onComplete }) {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -86,8 +81,6 @@ export default function Mainpage() {
             </Button>
           )}
           </Card>
-          
-          
         </Box>
     </Container>  
   );

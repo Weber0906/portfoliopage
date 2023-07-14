@@ -6,14 +6,14 @@ import './App.css'; // Update the CSS import to reflect the new file name
 import Projects from './Pages/Projects';
 import Skills from './Pages/Skills';
 import Contacts from './Pages/Contacts';
-import Particle from './Partials/Particles.jsx';
+// import Particle from './Partials/Particles.jsx';
 
 
 function App() {
   
   return (
       <Router>
-          <Particle />
+          {/* <Particle /> */}
           <Navbar />
         <Routes>
             <Route path="/" element={<Mainpage />} />
